@@ -1,0 +1,23 @@
+// Semantic UI
+@import 'semantic/dist/semantic';
+
+//Vars
+@import 'imports/vars';
+
+//Basic Class
+@import 'imports/base';
+
+//Mixins
+@import 'imports/mixins';
+
+//Geral
+@import 'imports/geral';
+
+//Pages
+@import 'pages/main';
+
+//Responsive
+@import 'imports/responsive';
+
+// Import Modules
+@import '../_modules/link/link';

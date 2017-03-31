@@ -1,0 +1,28 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import "_modules/link/link.nunjucks" as link %}
+
+{% block content %}
+  <div class="ui container">
+
+    <div class="ui centered grid">
+      <div class="six wide tablet eight wide computer column">
+        <div class="yeogurt-info text-centered">
+          <h1>Welcome to Semantic Yeogurt!</h1>
+          <p>
+            Take a look at the
+            {{link.content({
+            href: 'https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---',
+            text: 'documentation'
+          })}}
+            and start mixing up something awesome.
+          </p>
+          <p>
+            <img src="images/yeogurt-swirl.png" width="75px" class="logo"/>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}

@@ -6,21 +6,35 @@
 {% endblock %}
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="pt-BR" class="no-js">
 
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title>Semantic Yeogurt</title>
-    <meta name="description" content="A new Yeogurt application"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="{{baseUrl}}styles/main.css"/>
     {% block stylesheets %}{% endblock %}
 
+    <!-- SEO -->
+    <meta name="description" content="A new Semantic Yeogurt application"/>
+    <meta name="robots" content="noodp"/>
+    <link rel="canonical" href="http://seulink.aqui/" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Semantic Yeogurt" />
+    <meta property="og:description" content="A new Semantic Yeogurt application" />
+    <meta property="og:url" content="http://seulink.aqui/" />
+    <meta property="og:site_name" content="Semantic Yeogurt" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="A new Semantic Yeogurt application" />
+    <meta name="twitter:title" content="Semantic Yeogurt" />
+    <!-- / END SEO. -->
+
   </head>
   <body>
-    <main>
-
+    
+      {% include "_modules/menu/menu.nunjucks" %}
 
     <!--[if lt IE 11]>
     <p class="browsehappy">
@@ -28,14 +42,16 @@
     </p>
     <![endif]-->
 
+    <main>
+
+      {% block content %}{% endblock %}
+
     </main>
 
-    {% block content %}{% endblock %}
-
     <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
     <script src="{{baseUrl}}scripts/main.js"></script>
     {% block scripts %}{% endblock %}
   </body>

@@ -5,10 +5,10 @@
 
 //var $ = require('jquery');
 var semantic = require('../../semantic/dist/semantic');
-var Link = require('../_modules/link/link');
+var Menu = require('../_modules/menu/menu');
 
 $(function() {
-  new Link(); // Activate Link modules logic
+  new Menu(); // Activate Link modules logic
 //conteudo aqui
 
 //Accordion

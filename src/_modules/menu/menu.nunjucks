@@ -1,0 +1,11 @@
+<nav class="nav">
+  <div class="ui container">
+    <div class="ui secondary menu">
+      {% for item in site.data.menu.items %}
+        <a href="{{ item.url }}" class="item">{{ item.title }}</a>
+      {% else %}
+        <span>This would display if the 'item' collection were empty</span>
+      {% endfor %}
+    </div>
+  </div>
+</nav>

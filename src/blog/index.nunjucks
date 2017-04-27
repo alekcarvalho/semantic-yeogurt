@@ -6,5 +6,12 @@
 {% endblock %}
 
 {% block content %}
-<p>blog page</p>
+
+<div class="ui container">
+  <p>blog page</p>
+
+  {% include "_modules/dropdown/dropdown-index.nunjucks" %}
+</div>
+
+
 {% endblock %}

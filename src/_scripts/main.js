@@ -1,20 +1,12 @@
 // Main javascript entry point
 // Should handle bootstrapping/starting application
 
-'use strict';
+var libs = require('../_scripts/libs');
+var modules = require('../_scripts/modules');
+var functions = require('../_scripts/functions');
 
-//var $ = require('jquery');
-var semantic = require('../../semantic/dist/semantic');
-var Menu = require('../_modules/menu/menu');
 
-$(function() {
-  new Menu(); // Activate Link modules logic
-//conteudo aqui
-
-//Accordion
-$('.ui.accordion').accordion();
-
-//Dropdown
-$('.ui.dropdown').dropdown();
-
-});
+// Ativa a logica das funções exportadas em functions.js
+functions.myFunc();
+functions.mySecond();
+functions.myClick();

@@ -12,17 +12,13 @@
             and start mixing up something awesome.
           </p>
           <p>
-            <img src="images/yeogurt-swirl.png" width="75px" class="logo"/>
+            <img src="images/yeogurt-swirl.png" width="75px" class="logo" data-js="click-logo"/>
           </p>
         </div>
       </div>
     </div>
 
-    <select class="ui dropdown">
-      <option value="">Gender</option>
-      <option value="1">Male</option>
-      <option value="0">Female</option>
-    </select>
+    {% include "_modules/dropdown/dropdown-index.nunjucks" %}
 
   </div>
 {% endblock %}

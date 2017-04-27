@@ -1,3 +1,5 @@
+(function(window,document) {
+
 'use strict';
 
 // Constructor
@@ -7,3 +9,6 @@ var Menu = function() {
 };
 
 module.exports = Menu;
+
+
+})(window,document);

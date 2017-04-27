@@ -49,7 +49,8 @@ gulp.task('build', [
   'imagemin',
   'nunjucks',
   'sass',
-  'browserify'
+  'browserify',
+  'semantic'
 ]);
 
 // Server tasks with watch
@@ -60,8 +61,25 @@ gulp.task('serve', [
   'sass',
   'browserify',
   'browserSync',
-  'watch'
+  'watch',
+  'semantic-tmp'
 ]);
+
+//Semantic themes build
+gulp.task('semantic', function () {
+  return gulp.src([
+       'src/_styles/themes/**/*'
+       ])
+   .pipe(gulp.dest('build/styles/themes'))
+});
+
+//Semantic themes to tmp
+gulp.task('semantic-tmp', function () {
+  return gulp.src([
+       'src/_styles/themes/**/*'
+       ])
+   .pipe(gulp.dest('tmp/styles/themes'))
+});
 
 // Testing
 gulp.task('test', ['eslint'], function(done) {

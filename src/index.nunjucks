@@ -18,7 +18,48 @@
       </div>
     </div>
 
-    {% include "_modules/dropdown/dropdown-index.nunjucks" %}
+    <select class="ui dropdown dropdown-index">
+      <option value="">Gender</option>
+      <option value="1">Male</option>
+      <option value="0">Female</option>
+    </select>
+
+    <button id="open-modal" class="ui primary button" type="button" name="button">Open modal</button>
+
+
+    <div class="ui modal">
+      <i class="close icon"></i>
+
+      <div class="header">
+        Modal Title
+      </div>
+
+      <div class="content">
+
+        <form class="ui form" method="post">
+          <div class="field">
+            <label>First Name</label>
+            <input type="text" name="first-name" placeholder="First Name">
+          </div>
+          <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="last-name" placeholder="Last Name">
+          </div>
+          <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" tabindex="0" class="hidden">
+              <label>I agree to the Terms and Conditions</label>
+            </div>
+          </div>
+          <button class="ui button" type="submit">Submit</button>
+        </form>
+
+      </div>
+      <div class="actions">
+        <div class="ui button">Cancel</div>
+        <div class="ui button">OK</div>
+      </div>
+</div>
 
   </div>
 {% endblock %}

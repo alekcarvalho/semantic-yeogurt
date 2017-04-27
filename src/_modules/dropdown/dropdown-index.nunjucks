@@ -1,5 +1,0 @@
-<select class="ui dropdown dropdown-index">
-  <option value="">Gender</option>
-  <option value="1">Male</option>
-  <option value="0">Female</option>
-</select>

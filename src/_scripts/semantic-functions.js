@@ -1,4 +1,4 @@
-(function(window,document,$) {
+;(function ($, window, document, undefined) {
 
   'use strict';
 
@@ -12,4 +12,4 @@
     console.log('clicou');
   },false);
 
-})(window,document,jQuery);
+})( jQuery, window, document );

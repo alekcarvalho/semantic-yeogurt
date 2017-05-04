@@ -53,6 +53,11 @@ body.pushable > .pusher {
     overflow: visible;
 }
 
+body.dimmed.dimmable {
+    overflow-y: auto!important;
+    overflow-x: hidden!important;
+}
+
 main{
   margin-top: 40px;
 }

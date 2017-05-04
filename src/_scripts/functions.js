@@ -1,4 +1,4 @@
-(function(window,document,$) {
+;(function ($, window, document, undefined) {
 
   //Functions
 
@@ -26,4 +26,4 @@ module.exports.mySecond = mySecond;
 module.exports.myClick = myClick;
 
 
-})(window,document,jQuery);
+})( jQuery, window, document );

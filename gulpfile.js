@@ -5,8 +5,11 @@ var gulp = require('gulp');
 var gulpLoadPlugins = require('gulp-load-plugins');
 var browserSyncLib = require('browser-sync');
 var pjson = require('./package.json');
+var browserify = require('browserify');
+var vsource = require('vinyl-source-stream');
 var minimist = require('minimist');
 var glob = require('glob');
+
 
 // Load all gulp plugins based on their names
 // EX: gulp-copy -> copy
@@ -50,6 +53,7 @@ gulp.task('build', [
   'nunjucks',
   'sass',
   'browserify',
+  'browserify-vendor',
   'semantic'
 ]);
 
@@ -62,24 +66,9 @@ gulp.task('serve', [
   'browserify',
   'browserSync',
   'watch',
-  'semantic-tmp'
+  'browserify-vendor',
+  'semantic'
 ]);
-
-//Semantic themes build
-gulp.task('semantic', function () {
-  return gulp.src([
-       'src/_styles/themes/**/*'
-       ])
-   .pipe(gulp.dest('build/styles/themes'))
-});
-
-//Semantic themes to tmp
-gulp.task('semantic-tmp', function () {
-  return gulp.src([
-       'src/_styles/themes/**/*'
-       ])
-   .pipe(gulp.dest('tmp/styles/themes'))
-});
 
 // Testing
 gulp.task('test', ['eslint'], function(done) {

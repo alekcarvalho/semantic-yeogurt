@@ -19,7 +19,7 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
         path.join(dirs.source, '**/*.nunjucks'),
         path.join(dirs.source, dirs.data, '**/*.{json,yaml,yml}')
       ], ['nunjucks']);
-      
+
 
       // Copy
       gulp.watch([
@@ -27,6 +27,9 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
         '!' + path.join(dirs.source, '{**/\_*,**/\_*/**}'),
         '!' + path.join(dirs.source, '**/*.nunjucks')
       ], ['copy']);
+
+      //Others
+      gulp.watch('src/_scripts/vendor.js', ['browserify-vendor']);
 
       // Images
       gulp.watch([

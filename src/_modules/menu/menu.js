@@ -1,14 +1,14 @@
-(function(window,document) {
+;(function ($, window, document, undefined) {
 
-'use strict';
+  'use strict';
 
-// Constructor
-var Menu = function() {
-  this.name = 'menu';
-  console.log('%s module', this.name.toLowerCase());
-};
+  // Constructor
+  var Menu = function() {
+    this.name = 'menu';
+    console.log('%s module', this.name.toLowerCase());
+  };
 
-module.exports = Menu;
+  module.exports = Menu;
 
 
-})(window,document);
+})( jQuery, window, document );

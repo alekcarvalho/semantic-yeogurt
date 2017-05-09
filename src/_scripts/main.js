@@ -3,7 +3,7 @@
 
 var modules = require('../_scripts/modules');
 var functions = require('../_scripts/functions');
-var semantic_functions = require('../_scripts/semantic-functions');
+var semanticFunctions = require('../_scripts/semantic-functions');
 
 // Ativa a logica das funções exportadas em functions.js
 functions.myFunc();

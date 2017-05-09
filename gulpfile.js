@@ -5,8 +5,6 @@ var gulp = require('gulp');
 var gulpLoadPlugins = require('gulp-load-plugins');
 var browserSyncLib = require('browser-sync');
 var pjson = require('./package.json');
-var browserify = require('browserify');
-var vsource = require('vinyl-source-stream');
 var minimist = require('minimist');
 var glob = require('glob');
 

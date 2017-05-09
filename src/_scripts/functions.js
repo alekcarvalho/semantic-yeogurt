@@ -20,10 +20,10 @@
   }
 
 
-//Exporta as funções para serem importadas
-module.exports.myFunc = myFunc;
-module.exports.mySecond = mySecond;
-module.exports.myClick = myClick;
+  //Exporta as funções para serem importadas
+  module.exports.myFunc = myFunc;
+  module.exports.mySecond = mySecond;
+  module.exports.myClick = myClick;
 
 
 })( jQuery, window, document );

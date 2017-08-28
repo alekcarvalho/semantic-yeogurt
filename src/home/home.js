@@ -1,9 +1,5 @@
 ;(function ($, window, document, undefined) {
 
-  'use strict';
-
-
-  console.log('ajsidsajidjsaidj');
-
+  $('.ui.dropdown').dropdown();
 
 })( jQuery, window, document );

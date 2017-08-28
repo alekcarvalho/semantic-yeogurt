@@ -1,11 +1,5 @@
 // Main javascript entry point
 // Should handle bootstrapping/starting application
 
-var modules = require('../_scripts/modules');
-var functions = require('../_scripts/functions');
-var semanticFunctions = require('../_scripts/semantic-functions');
-
-// Ativa a logica das funções exportadas em functions.js
-functions.myFunc();
-functions.mySecond();
-functions.myClick();
+var Home = require('../home/home');
+var Menu = require('../_modules/menu/menu');
